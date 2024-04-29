@@ -1,0 +1,82 @@
+\documentclass[12pt]{article}
+
+\usepackage{graphicx}
+\usepackage{url}
+
+\begin{document} 
+
+\title{Relatório de Funcionamento do Sistema de Locadora de Veículos}
+\author{Luiz Filipe Marques Nascimento}
+
+\maketitle
+
+\begin{abstract}
+Este relatório descreve o funcionamento do sistema de locadora de veículos, apresentando seus objetivos, requisitos, arquitetura, implementação técnica, banco de dados, testes e validação, resultados, conclusões e considerações finais.
+\end{abstract}
+     
+\section{Introdução}
+
+O sistema de locadora de veículos foi desenvolvido para oferecer uma solução eficiente e conveniente para o processo de reserva e aluguel de automóveis. Com base nos requisitos do cliente e nas necessidades do mercado, o sistema visa proporcionar uma experiência simplificada para clientes e empresas de locação de veículos.
+
+\subsection{Objetivos do Sistema}
+
+\begin{itemize}
+    \item Facilitar o gerenciamento de veículos, clientes e reservas para locadoras de veículos.
+    \item Oferecer uma interface amigável e intuitiva para a reserva de veículos pelos clientes.
+    \item Automatizar processos de reserva, pagamento e devolução para aumentar a eficiência operacional das locadoras.
+    \item Permitir a expansão e personalização do sistema de acordo com as necessidades específicas do cliente.
+\end{itemize}
+
+\section{Requisitos Funcionais}
+
+O sistema de locadora de veículos oferece as seguintes funcionalidades principais:
+\begin{itemize}
+    \item Cadastro e gerenciamento de veículos, incluindo informações sobre modelo, marca e disponibilidade.
+    \item Cadastro e gerenciamento de clientes, com detalhes como nome, sobrenome e histórico de reservas.
+    \item Reserva de veículos por parte dos clientes, com especificação de datas de início e término da locação.
+    \item Visualização e atualização das reservas existentes, permitindo alterações de datas e cancelamentos.
+\end{itemize}
+
+\section{Arquitetura do Sistema}
+
+O sistema segue uma arquitetura baseada no padrão MVC (Model-View-Controller), que divide a aplicação em camadas distintas para gerenciamento de dados, lógica de negócios e interface do usuário. As principais tecnologias utilizadas incluem C\# 6.0, ASP.NET Core, Entity Framework, SQL Server e Swagger para documentação da API.
+
+\section{Implementação Técnica}
+
+A implementação técnica do sistema é baseada em boas práticas de desenvolvimento de software, com ênfase na modularidade, reutilização de código e manutenibilidade. As principais classes do sistema incluem:
+\begin{itemize}
+    \item Veículo: Responsável por armazenar informações sobre os veículos disponíveis para locação.
+    \item Cliente: Responsável por armazenar informações sobre os clientes que utilizam o sistema.
+    \item Reserva: Responsável por gerenciar as reservas de veículos feitas pelos clientes.
+\end{itemize}
+
+\section{Descrição do Banco de Dados}
+
+O banco de dados do sistema é implementado em SQL Server e segue um modelo de dados que inclui tabelas para veículos, clientes e reservas. Os relacionamentos entre as entidades são estabelecidos por meio de chaves estrangeiras para garantir a integridade referencial.
+
+\section{Testes e Validação}
+
+Foram realizados testes abrangentes no sistema, incluindo testes manuais para garantir sua estabilidade e confiabilidade. Os testes foram realizados de forma manual, abordando casos de uso típicos e cenários de exceção.
+
+\section{Resultados e Conclusões}
+
+O sistema de locadora de veículos demonstrou ser uma solução eficaz para simplificar o processo de reserva e aluguel de veículos. Ele atende aos requisitos estabelecidos pelo cliente e oferece uma base sólida para futuras melhorias e expansões. Após análise e avaliação, concluímos que o sistema está apto a atender às necessidades da locadora de veículos de forma satisfatória.
+
+\section{Considerações Finais}
+
+Embora o sistema tenha sido desenvolvido com sucesso, reconhecemos que ainda há espaço para melhorias e novas implementações. Estamos abertos a sugestões do cliente e estamos preparados para realizar ajustes e adições conforme necessário para garantir a satisfação contínua do usuário e o sucesso do projeto.
+
+\section{Referências}
+
+\begin{itemize}
+    \item Documentação do ASP.NET Core: https://learn.microsoft.com/pt-br/aspnet/core/?view=aspnetcore-6.0
+    \item Documentação do Entity Framework Core: https://learn.microsoft.com/pt-br/ef/core/
+    \item Documentação do SQL Server: https://learn.microsoft.com/pt-br/sql/sql-server/?view=sql-server-ver15
+    \item Aulas realizadas no curso de Tecnologias para Análise e Desenvolvimento de Sistemas da PUC Minas
+\end{itemize}
+
+\section{Apêndices}
+
+Não há apêndices adicionais.
+
+\end{document}
